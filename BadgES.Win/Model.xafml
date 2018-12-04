@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Application Logo="ExpressAppLogo">
+<Application Logo="BO_StateMachine" Company="Teradata GDC PH" Copyright="2018" Description="Teradata Badge Report Extractor Mailer">
   <NavigationItems NavigationStyle="Accordion" ShowImages="False" DefaultChildItemsDisplayStyle="List" StartupNavigationItem="ResourceList_ListView">
     <Items>
       <Item Id="Default">
         <Items>
+          <Item Id="ResourceList_ListView" Index="0" />
           <Item Id="DetailedEntryExitPair_ListView" Visible="False" />
           <Item Id="DetailedRaw_ListView" Visible="False" />
           <Item Id="Summary_ListView" Visible="False" />
