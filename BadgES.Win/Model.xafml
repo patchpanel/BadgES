@@ -1,6 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Logo="ExpressAppLogo">
-  <NavigationItems NavigationStyle="Accordion" ShowImages="False" DefaultChildItemsDisplayStyle="List" StartupNavigationItem="ResourceList_ListView" />
+  <NavigationItems NavigationStyle="Accordion" ShowImages="False" DefaultChildItemsDisplayStyle="List" StartupNavigationItem="ResourceList_ListView">
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="DetailedEntryExitPair_ListView" Visible="False" />
+          <Item Id="DetailedRaw_ListView" Visible="False" />
+          <Item Id="Summary_ListView" Visible="False" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
   <Options UIType="TabbedMDI" FormStyle="Ribbon" ShowTabImage="False">
     <LayoutManagerOptions EnableLayoutGroupImages="False" />
     <RibbonOptions RibbonControlStyle="OfficeUniversal" />

@@ -7,7 +7,7 @@ allows you to view and customize application components: referenced modules,
 security settings, data connection. Additionally, the root folder contains 
 Application Model difference files (XAFML files) that keep application settings 
 specific for the current application. Differences files can be designed with 
-the Model Editor.  
+the Model Editor.
 
 
 Relevant Documentation
