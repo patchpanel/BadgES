@@ -87,6 +87,7 @@
       <Name>System</Name>
       <Private>False</Private>
     </Reference>
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data">
       <Name>System.Data</Name>
       <Private>False</Private>
@@ -100,6 +101,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessObjects\BadgESDataModelCode\ConnectionHelper.cs" />
+    <Compile Include="BusinessObjects\BadgESDataModelCode\DetailedEntryExitPair.cs" />
+    <Compile Include="BusinessObjects\BadgESDataModelCode\DetailedEntryExitPair.Designer.cs">
+      <DependentUpon>DetailedEntryExitPair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BadgESDataModelCode\DetailedRaw.cs" />
+    <Compile Include="BusinessObjects\BadgESDataModelCode\DetailedRaw.Designer.cs">
+      <DependentUpon>DetailedRaw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BadgESDataModelCode\ResourceList.cs" />
+    <Compile Include="BusinessObjects\BadgESDataModelCode\ResourceList.Designer.cs">
+      <DependentUpon>ResourceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\BadgESDataModelCode\Summary.cs" />
+    <Compile Include="BusinessObjects\BadgESDataModelCode\Summary.Designer.cs">
+      <DependentUpon>Summary.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>
@@ -115,8 +133,14 @@
       <SubType>Designer</SubType>
       <DependentUpon>Module.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="BusinessObjects\BadgESDataModel.xpo" />
+    <None Include="BusinessObjects\BadgESDataModel.xpo.diagram">
+      <DependentUpon>BadgESDataModel.xpo</DependentUpon>
+    </None>
     <None Include="DatabaseUpdate\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
