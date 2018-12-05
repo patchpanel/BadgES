@@ -207,6 +207,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="App.config" />
+    <EmbeddedResource Include="Images\td_logo.png" />
     <Content Include="Model.xafml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -226,6 +227,10 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BadgES.Core\BadgES.Core.csproj">
+      <Project>{3bacd11e-a26d-4c56-b5c7-87bcb37c93f8}</Project>
+      <Name>BadgES.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BadgES.Module.Win\BadgES.Module.Win.csproj">
       <Project>{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}</Project>
       <Name>BadgES.Module.Win</Name>

@@ -27,7 +27,7 @@ namespace BadgES.Win {
             Tracing.Initialize();
             BadgESWindowsFormsApplication winApplication = new BadgESWindowsFormsApplication();
             // Refer to the https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112680.aspx help article for more details on how to provide a custom splash form.
-            //winApplication.SplashScreen = new DevExpress.ExpressApp.Win.Utils.DXSplashScreen("YourSplashImage.png");
+            winApplication.SplashScreen = new DevExpress.ExpressApp.Win.Utils.DXSplashScreen();
             SecurityAdapterHelper.Enable();
             if(ConfigurationManager.ConnectionStrings["ConnectionString"] != null) {
                 winApplication.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
