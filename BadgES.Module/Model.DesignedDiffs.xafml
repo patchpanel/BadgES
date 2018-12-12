@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Application Title="BadgES">
+<Application Title="BadgES" Company="Teradata GDC PH" Copyright="2018" Description="Teradata Badge Extractor Sender" Logo="td_logo">
   <Options>
     <LayoutManagerOptions RequiredFieldMark="*" />
   </Options>

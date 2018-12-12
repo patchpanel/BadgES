@@ -95,6 +95,7 @@
     <Reference Include="System.Drawing">
       <Private>False</Private>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
       <Private>False</Private>
@@ -118,11 +119,23 @@
     <Compile Include="BusinessObjects\BadgESDataModelCode\Summary.Designer.cs">
       <DependentUpon>Summary.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\SendEmailController.cs">
+    <Compile Include="Controllers\EmailController.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controllers\SendEmailController.Designer.cs">
-      <DependentUpon>SendEmailController.cs</DependentUpon>
+    <Compile Include="Controllers\EmailController.Designer.cs">
+      <DependentUpon>EmailController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ExtractController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ExtractController.Designer.cs">
+      <DependentUpon>ExtractController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ImportController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ImportController.Designer.cs">
+      <DependentUpon>ImportController.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="Module.cs">
@@ -134,8 +147,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Controllers\SendEmailController.resx">
-      <DependentUpon>SendEmailController.cs</DependentUpon>
+    <EmbeddedResource Include="Controllers\EmailController.resx">
+      <DependentUpon>EmailController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ExtractController.resx">
+      <DependentUpon>ExtractController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ImportController.resx">
+      <DependentUpon>ImportController.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
     <EmbeddedResource Include="Module.resx">
@@ -172,6 +191,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Images\td_logo.png" />
     <Content Include="Welcome.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BadgES.Core\BadgES.Core.csproj">
+      <Project>{3BACD11E-A26D-4C56-B5C7-87BCB37C93F8}</Project>
+      <Name>BadgES.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

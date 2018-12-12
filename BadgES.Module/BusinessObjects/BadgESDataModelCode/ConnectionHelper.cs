@@ -29,7 +29,7 @@ namespace BadgES.Module.BusinessObjects.BadgES
             Array.Copy(persistentTypes, copy, persistentTypes.Length);
             return copy;
         }
-        public static string ConnectionString { get { return System.Configuration.ConfigurationManager.ConnectionStrings[@"(localdb)\mssqllocaldbBadgES"].ConnectionString; } }
+        public static string ConnectionString { get { return System.Configuration.ConfigurationManager.ConnectionStrings[@"(localdb)\xxxxmssqllocaldbBadgES"].ConnectionString; } }
         public static void Connect(DevExpress.Xpo.DB.AutoCreateOption autoCreateOption, bool threadSafe = false)
         {
             if (threadSafe)

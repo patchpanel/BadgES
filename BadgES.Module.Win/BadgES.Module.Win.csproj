@@ -164,6 +164,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BadgES.Core\BadgES.Core.csproj">
+      <Project>{3bacd11e-a26d-4c56-b5c7-87bcb37c93f8}</Project>
+      <Name>BadgES.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BadgES.Module\BadgES.Module.csproj">
       <Project>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</Project>
       <Name>BadgES.Module</Name>
